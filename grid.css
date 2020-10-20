@@ -1,0 +1,93 @@
+*, *::after, *::before {box-sizing:border-box;margin:0;padding:0}
+html, body, main    {min-height:100%; position: relative;}
+body                {margin:0 auto;color:#222;overflow-x: hidden;overflow-y: scroll;font-size: .98em;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+a                   {text-decoration: none;color:#4488bb}
+img                 {max-width:100%;height:auto}
+li                  {list-style: none}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {display: block;}
+audio, canvas, progress, video {display: inline-block;}
+
+[dir="rtl"] *           {direction: rtl}
+[lang="dir"] .columns   {float: right;}
+
+
+/* ========     GRID       ========  */
+section                 {position: relative}
+.row               {margin:0 auto;max-width:1200px;width:100%}
+main:after,
+.row:before, .row:after {content:" ";display:table;clear:both}
+
+.row .row           {margin:0 -1rem;max-width:none;width:auto}
+.row .row.collapse        {margin:0}
+.collapse > .columns   {padding-left:0;padding-right:0}
+.collapse .row           {margin-left:0;margin-right:0}
+.columns, .column      {width:100%;float:left}
+.centered           {margin-left:auto;margin-right:auto;float:none}
+.centered:last-child   {float:none}
+.clearfix:after         {content: ""; display: table; clear: both; }
+.hidden {border: 0;height: 1px;margin: -1px; overflow: hidden;padding: 0; position: absolute; width: 1px;}
+.disabled {opacity:.5}
+
+.visuallyhidden, .hide {display: none}
+
+@media only screen and (max-width:400px) {
+  .x-small-hide {display: none}
+}
+
+@media only screen {
+  .columns, .column {padding-left:.1rem;padding-right:.1rem;}
+  .small-text-center{text-align: center}
+  .small-hide       {display:none}
+  .small-show       {display:block}
+  .small-1        {width:8.33333%}
+  .small-2        {width:16.66667%}
+  .small-3        {width:25%}
+  .small-4        {width:33.33333%}
+  .small-5        {width:41.66667%}
+  .small-6        {width:50%}
+  .small-7        {width:58.33333%}
+  .small-8        {width:66.66667%}
+  .small-9        {width:75%}
+  .small-10       {width:83.33333%}
+  .small-11       {width:91.66667%}
+  .small-12       {width:100%}
+}
+@media only screen and (min-width:600px) {
+  .small-text-center{text-align: inherit}
+  .small-show       {display:none}
+  .small-hide       {display:inherit}
+  .medium-hide      {display:none}
+  .medium-1       {width:8.33333%}
+  .medium-2       {width:16.66667%}
+  .medium-3       {width:25%}
+  .medium-4       {width:33.33333%}
+  .medium-5       {width:41.66667%}
+  .medium-6       {width:50%}
+  .medium-7       {width:58.33333%}
+  .medium-8       {width:66.66667%}
+  .medium-9       {width:75%}
+  .medium-10      {width:83.33333%}
+  .medium-11      {width:91.66667%}
+  .medium-12      {width:100%}
+}
+@media only screen and (min-width:960px) {
+  .columns, .column          {padding-left:1.1rem;padding-right:1.1rem;}
+  .small-text-center{text-align: inherit}
+  .small-show       {display:none}
+  .small-hide       {display:inherit}
+  .medium-hide      {display:block}
+  .large-1        {width:8.33333%}
+  .large-2        {width:16.66667%}
+  .large-3        {width:25%}
+  .large-4        {width:33.33333%}
+  .large-5        {width:41.66667%}
+  .large-6        {width:50%}
+  .large-7        {width:58.33333%}
+  .large-8        {width:66.66667%}
+  .large-9        {width:75%}
+  .large-10       {width:83.33333%}
+  .large-11       {width:91.66667%}
+  .large-12       {width:100%}
+}
+
+.text-centered {text-align: center} 
